@@ -61,8 +61,8 @@ namespace Review4
                 using (var csvreader = new CsvReader(reader, CultureInfo.InvariantCulture)) 
                 {
                     var dataFromCsv = csvreader.GetRecords(list);
-                    foreach (var record in dataFromCsv) { 
-                    Console.WriteLine($"name is {record.})
+                    foreach (var record in dataFromCsv) {
+                        Console.WriteLine($"name is {record}");
                     
                     }
                     var filter = list.Where(e => e.Age > 18).Select(e => e.Name).ToList();
